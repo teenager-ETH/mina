@@ -41,7 +41,7 @@ TRANSACTION_COUNT = prometheus_client.Counter("faucet_transactions_sent", "Numbe
 TOTAL_CODA_SENT = prometheus_client.Counter("faucet_coda_sent", "Amount of Coda sent since the process started")
 PROCESS_METRICS = prometheus_client.ProcessCollector(namespace='faucet')
 PLEASE_WAIT_ERRORS = prometheus_client.Counter("faucet_please_wait_errors", "Number of 'Please Wait' Errors that have been issued")
-BLOCK_NOTIFICATIONS_RECIEVED = prometheus_client.Counter("faucet_block_notifications_recieved", "Number of Block Notifications recieved")
+BLOCK_NOTIFICATIONS_RECIEVED = prometheus_client.Counter("faucet_block_notifications_recieved", "Number of Block Notifications received")
 
 # This is a fix for a bug in the Daemon where the Nonce is
 # only incremented once per block, can be removed once it's fixed
